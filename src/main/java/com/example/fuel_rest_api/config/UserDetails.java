@@ -18,10 +18,10 @@ public class UserDetails implements UserDetailsService {
 
     @Override
     public org.springframework.security.core.userdetails.UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        com.example.fuel_rest_api.auth.User user = userRepo.findByName(username);
+        com.example.fuel_rest_api.auth.User user = userRepo.findByName(username); //get user by name
         return new User(user.getName(),user.getPassword(),getGrantedAuthorities(user.getRoles()));
     }
-    private List<GrantedAuthority> getGrantedAuthorities(List<Role> roles) {
+    private List<GrantedAuthority> getGrantedAuthorities(List<Role> roles) { //create granted authorities using user roles
         List<GrantedAuthority> authorities = new ArrayList<>();
         for (Role role : roles) {
             authorities.add(new SimpleGrantedAuthority(role.getRole()));

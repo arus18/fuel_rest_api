@@ -19,7 +19,7 @@ public class FuelBuyDetails {
     private int customerID;
 
     @CreatedDate
-    private Date date;
+    private Date date; //date record is created
     private double litres;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)

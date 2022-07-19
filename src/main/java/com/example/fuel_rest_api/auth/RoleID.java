@@ -3,7 +3,7 @@ import jdk.jfr.DataAmount;
 
 import java.io.Serializable;
 
-public class RoleID implements Serializable {
+public class RoleID implements Serializable {//created for composite key used in role class
 
     private String user_name;
     private String role;
