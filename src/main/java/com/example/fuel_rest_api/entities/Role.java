@@ -1,4 +1,4 @@
-package com.example.fuel_rest_api.auth;
+package com.example.fuel_rest_api.entities;
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -15,7 +15,7 @@ public class Role implements Serializable {
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "user_name", insertable = false,updatable = false)
-    private com.example.fuel_rest_api.auth.User user;
+    private User user;
 
     public Role() {
     }

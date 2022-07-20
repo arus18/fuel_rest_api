@@ -1,4 +1,4 @@
-package com.example.fuel_rest_api.auth;
+package com.example.fuel_rest_api.entities;
 import jdk.jfr.DataAmount;
 
 import java.io.Serializable;

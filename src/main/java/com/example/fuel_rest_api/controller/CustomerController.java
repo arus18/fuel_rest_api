@@ -1,6 +1,6 @@
-package com.example.fuel_rest_api.controller.customer_controller;
-import com.example.fuel_rest_api.customer.Customer;
-import com.example.fuel_rest_api.customer.CustomerRepo;
+package com.example.fuel_rest_api.controller;
+import com.example.fuel_rest_api.entities.Customer;
+import com.example.fuel_rest_api.repository.CustomerRepo;
 import org.apache.commons.collections.IteratorUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

@@ -1,7 +1,6 @@
 package com.example.fuel_rest_api.config;
-import com.example.fuel_rest_api.auth.Role;
-import com.example.fuel_rest_api.auth.RoleRepo;
-import com.example.fuel_rest_api.auth.UserRepo;
+import com.example.fuel_rest_api.entities.Role;
+import com.example.fuel_rest_api.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -18,7 +17,7 @@ public class UserDetails implements UserDetailsService {
 
     @Override
     public org.springframework.security.core.userdetails.UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        com.example.fuel_rest_api.auth.User user = userRepo.findByName(username); //get user by name
+        com.example.fuel_rest_api.entities.User user = userRepo.findByName(username); //get user by name
         return new User(user.getName(),user.getPassword(),getGrantedAuthorities(user.getRoles()));
     }
     private List<GrantedAuthority> getGrantedAuthorities(List<Role> roles) { //create granted authorities using user roles

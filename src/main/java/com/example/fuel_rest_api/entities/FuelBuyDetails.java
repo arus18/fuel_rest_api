@@ -1,5 +1,5 @@
-package com.example.fuel_rest_api.fuel_buy_details;
-import com.example.fuel_rest_api.customer.Customer;
+package com.example.fuel_rest_api.entities;
+import com.example.fuel_rest_api.entities.Customer;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import javax.persistence.*;

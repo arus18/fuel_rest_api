@@ -1,4 +1,4 @@
-package com.example.fuel_rest_api.auth;
+package com.example.fuel_rest_api.entities;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;

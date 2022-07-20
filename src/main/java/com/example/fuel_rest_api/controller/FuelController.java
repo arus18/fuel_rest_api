@@ -1,6 +1,6 @@
-package com.example.fuel_rest_api.controller.fuel_controller;
-import com.example.fuel_rest_api.fuel_buy_details.FuelBuyDetails;
-import com.example.fuel_rest_api.fuel_buy_details.FuelBuyDetailsRepo;
+package com.example.fuel_rest_api.controller;
+import com.example.fuel_rest_api.entities.FuelBuyDetails;
+import com.example.fuel_rest_api.repository.FuelBuyDetailsRepo;
 import org.apache.commons.collections.IteratorUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

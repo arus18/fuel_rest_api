@@ -1,5 +1,4 @@
-package com.example.fuel_rest_api.customer;
-import com.example.fuel_rest_api.fuel_buy_details.FuelBuyDetails;
+package com.example.fuel_rest_api.entities;
 import javax.persistence.*;
 import java.util.List;
 
